@@ -406,7 +406,7 @@ impl Div for Complex {
     fn div(self, other: Complex) -> Complex {
         Complex(
             (self.0 * other.0 + self.1 * other.1) / (other.0.powi(2)+other.1.powi(2)),
-            (self.1 * other.0 - self.0 - other.1) / (other.0.powi(2)+other.1.powi(2)),
+            (self.1 * other.0 - self.0 * other.1) / (other.0.powi(2)+other.1.powi(2)),
         )
     }
 }
